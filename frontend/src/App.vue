@@ -1,16 +1,13 @@
 <template>
   <div id="app">
-    <HelloWorld />
+    <RouterView/>
   </div>
 </template>
 
 <script lang="ts">
-import HelloWorld from './components/HelloWorld.vue';
+import { defineComponent } from 'vue';
 
-export default {
-  name: 'App',
-  components: {
-    HelloWorld,
-  },
-};
+export default defineComponent({
+  name: 'App'
+})
 </script>
